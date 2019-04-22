@@ -1,0 +1,19 @@
+{
+  "name": "num-match",
+  "version": "0.1.0",
+  "description": "Verbal number classifier",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "numbers",
+    "match",
+    "classifier"
+  ],
+  "author": "@dolphin4ik",
+  "license": "ISC",
+  "dependencies": {
+    "big.js": "^5.2.2"
+  }
+}
