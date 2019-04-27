@@ -9,10 +9,10 @@ const parser = str => {
   } else {
     numbers = numbers.sort((i, j) => parseFloat(i) > parseFloat(j));
     numA = !!numbers[0].length
-      ? { strict: numbers[0].endsWith('!'), value: numbers[0] }
+      ? { strict: numbers[0].endsWith('!'), value: parseFloat(numbers[0]) }
       : false;
     numB = !!numbers[1].length
-      ? { strict: numbers[1].endsWith('!'), value: numbers[1] }
+      ? { strict: numbers[1].endsWith('!'), value: parseFloat(numbers[1]) }
       : false;
   }
   return { num, numA, numB, label };

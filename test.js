@@ -9,7 +9,8 @@ const rules = [
   '125=Equal 125',
   '131&129=Out of order',
   '199&=More or equal 199',
-  '155.1&155.7=Float'
+  '155.1&155.7=Float',
+  '139&141!=Strict 141'
 ];
 const check = numMatch(rules);
 
@@ -47,4 +48,9 @@ test('Float', t => {
 
 test('Not in rules', t => {
   t.is(check(144), false);
+});
+
+test('Strict', t => {
+  t.is(check(141), false);
+  t.is(check(140), 'Strict 141');
 });
