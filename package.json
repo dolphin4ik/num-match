@@ -1,10 +1,10 @@
 {
   "name": "num-match",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Verbal number classifier",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "ava test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "big.js": "^5.2.2"
+  },
+  "devDependencies": {
+    "ava": "^1.4.1"
   }
 }
